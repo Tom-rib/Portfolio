@@ -38,46 +38,45 @@
     </div>
   </header>
 
-  <main>
+
+<main>
 
    <!-- Hero Terminal -->
    <section class="hero-terminal" id="hero-terminal">
         <h1>root@Tom_Ribero<span class="cursor"></span></h1>
-            <div class="terminal-text">
-                
-                 <p>root@Tom_Ribero:~$ cat about.txt</p>
-                 <p>======================================</p>
+        <div class="terminal-text">
+            <p>root@Tom_Ribero:~$ cat profile.txt</p>
+            <p style="color: #00ff00; margin: 0.5rem 0;">╔══════════════════════════════════════════════════════════════╗</p>
+            
+            <p style="margin-top: 1rem;"><span style="color: #facc15;">PROFIL</span></p>
+            <p style="margin-left: 1.5rem; color: #80ff80;">• Nom: <strong>Tom Ribero</strong> | Localisation: <strong>Marseille, France</strong></p>
+            <p style="margin-left: 1.5rem; color: #80ff80;">• Status: <strong>Étudiant en Bachelor IT (B2)</strong> à La Plateforme</p>
+            <p style="margin-left: 1.5rem; color: #80ff80;">• Spécialité: <strong>Admin Systèmes, Réseaux & Cybersécurité</strong></p>
+            <p style="margin-left: 1.5rem; color: #80ff80;">• Alternance dès <strong>Octobre 2025</strong> (4 semaines/1 semaine)</p>
+            
+            <p style="margin-top: 1rem;"><span style="color: #facc15;">PASSIONS</span></p>
+            <p style="margin-left: 1.5rem; color: #80ff80;">► Administration Systèmes  |  Automatisation  |  Infra Monitoring  |  Cybersécurité</p>
+            
+            <p style="margin-top: 1rem;"><span style="color: #facc15;">FEUILLE DE ROUTE</span></p>
+            <p style="margin-left: 1.5rem; color: #80ff80;">[SHORT]  Admin Systèmes & Réseaux</p>
+            <p style="margin-left: 1.5rem; color: #80ff80;">[MEDIUM] Admin Cloud / SysOps</p>
+            <p style="margin-left: 1.5rem; color: #80ff80;">[LONG]   DevOps Engineer & Security Specialist</p>
+            
+            <p style="color: #00ff00; margin: 1rem 0 0 0;">╚══════════════════════════════════════════════════════════════╝</p>
 
-                 <p># ===== PROFIL =====</p>
-                 <p>NAME="Tom Ribero"</p>
-                 <p>LOCATION="Marseille, France"</p>
-                 <p>STATUS="Étudiant en Bachelor IT (B2)"</p>
-                 <p>SPECIALTY="Admin Systèmes, Réseaux & Cybersécurité"</p> 
-                 <p>SEEKING="Alternance dès Octobre 2025 (4semaines/1semaine)"</p>
+            <p style="margin-top: 1.5rem; line-height: 1.8; color: #80ff80;">
+                Passionné par l'administration des systèmes, l'automatisation et la supervision d'infrastructures, 
+                je cherche à progresser vers l'administration cloud et DevOps, en développant une expertise complète 
+                en cybersécurité. Je souhaite rejoindre une équipe dynamique pour apprendre auprès de professionnels 
+                expérimentés et contribuer à la fiabilité, performance et sécurité des systèmes.
+            </p>
+        </div>
 
-                 <p>======================================</p>
-
-                 <p># ===== PASSIONS =====</p>
-                 <p>PASSIONS=("Administration Systems" "Automation" "Infra Monitoring" "Cybersécurité")</p>
-
-                 <p>======================================</p>
-                 <p># ===== OBJECTIFS =====</p>
-                 <p>SHORT_TERM_GOAL="Admin Systems & Network"</p>
-                 <p>MEDIUM_TERM_GOAL="Admin Cloud/SysOps"</p>
-                 <p>LONG_TERM_GOAL="DevOps Engineer & Security Specialist"</p>
-                 <p>======================================</p>
-
-                <p>Passionné par l'administration des systèmes, l'automatisation, la supervision d'infrastructures et la cybersécurité.</p>
-                <p>Mon objectif : progresser vers l'administration cloud / sysops, puis devenir DevOps, tout en développant une maîtrise complète de la cybersécurité.</p>
-                <p>Je souhaite rejoindre une entreprise dynamique pour continuer à apprendre auprès de professionnels expérimentés et contribuer à la fiabilité, la performance et la sécurité des systèmes.</p>
-  </div>
-
-           <div class="actions">
-             <a href="#projets" class="btn">Voir mes projets</a>
-             <a href="https://drive.google.com/file/d/13OWVVGmrot3aj0WJ3hB7o80s0ksajJrq/view?usp=sharing" class="btn" target="_blank">Télécharger CV</a>
+        <div class="actions">
+            <a href="#projets" class="btn">$ ./voir_projets.sh</a>
+            <a href="https://drive.google.com/file/d/1hel9hqkbWz-muxcYHdCWozTVLr0_g98X/view?usp=sharing" class="btn" target="_blank">$ ./telecharger_cv.pdf</a>
         </div>
     </section>
-
 
     <!-- Projets -->
     <section id="projets">
@@ -85,18 +84,20 @@
         <h2>Projets</h2>
         <p>root@Tom_Ribero:~$ ls -la</p>
        <p>============================================================</p>
-  </div>
       </div>
       <div class="grid">
         <!-- Exemple de projet -->
+
+         <div class="card"><h3><a href="https://github.com/Tom-rib/Architecte_AWS" target="_blank">Architecte_AWS</a></h3><p>Projet complet de déploiement d'infrastructure cloud couvrant 9 jobs progressifs. Maîtrise des services AWS essentiels : EC2, S3, RDS, Lambda, CloudWatch, Glue, Athena, ECS/Fargate et Step Functions. Infrastructure web scalable, APIs serverless, monitoring, ETL et orchestration de workflows..</p></div>
+
         <div class="card"><h3><a href="https://github.com/Tom-rib/documentation_minilab" target="_blank">MINILAB</a></h3><p>Projet de déploiement d'une infrastructure réseau complète, sécurisée et maintenable pour une association : services centralisés (LDAP, NFS, DNS, DHCP), postes clients légers Debian, supervision, VPN, sécurité renforcée et interface de gestion web.</p></div>
-         <div class="card"><h3><a href="https://github.com/Tom-rib/Arduino" target="_blank">Arduino </a></h3><p> Ce projet pédagogique basé sur un kit Arduino ! Vous y trouverez des exercices (nommés JOB) progressifs allant des bases de l’électricité aux projets complexes comme une station météo ou un jeu de mémoire.</p></div>
+         <div class="card"><h3><a href="https://github.com/Tom-rib/Arduino" target="_blank">Arduino </a></h3><p> Ce projet pédagogique basé sur un kit Arduino ! Vous y trouverez des exercices (nommés JOB) progressifs allant des bases de l'électricité aux projets complexes comme une station météo ou un jeu de mémoire.</p></div>
 
-        <div class="card"><h3><a href="https://github.com/Tom-rib/Documentation-Serveur-TrueNas-Scale" target="_blank">TrueNAS + Vaultwarden</a></h3><p>Ce projet consiste à déployer et sécuriser un serveur TrueNAS Scale complet, incluant la gestion des utilisateurs, les services SSH et SFTP, un gestionnaire de mots de passe Vaultwarden, une machine virtuelle imbriquée et l’authentification 2FA.</p></div>
+        <div class="card"><h3><a href="https://github.com/Tom-rib/Documentation-Serveur-TrueNas-Scale" target="_blank">TrueNAS + Vaultwarden</a></h3><p>Ce projet consiste à déployer et sécuriser un serveur TrueNAS Scale complet, incluant la gestion des utilisateurs, les services SSH et SFTP, un gestionnaire de mots de passe Vaultwarden, une machine virtuelle imbriquée et l'authentification 2FA.</p></div>
 
-        <div class="card"><h3><a href="https://github.com/Tom-rib/Documentation_Serveur_Windows_ActiveDirectory" target="_blank">Active Directory</a></h3><p>Ce projet vise à configurer une infrastructure Windows Server avec Active Directory, permettant une gestion centralisée et sécurisée des utilisateurs, des permissions et des ressources réseau grâce à des scripts d’automatisation.</p></div>
+        <div class="card"><h3><a href="https://github.com/Tom-rib/Documentation_Serveur_Windows_ActiveDirectory" target="_blank">Active Directory</a></h3><p>Ce projet vise à configurer une infrastructure Windows Server avec Active Directory, permettant une gestion centralisée et sécurisée des utilisateurs, des permissions et des ressources réseau grâce à des scripts d'automatisation.</p></div>
 
-        <div class="card"><h3><a href="https://github.com/Tom-rib/Documentation_Serveur_Windows_PXE_ADK" target="_blank">Windows PXE ADK</a></h3><p>Ce projet consiste à déployer un serveur PXE combinant Windows Server et solutions open source, pour automatiser et sécuriser l’installation de machines à partir d’images système Windows.</p></div>
+        <div class="card"><h3><a href="https://github.com/Tom-rib/Documentation_Serveur_Windows_PXE_ADK" target="_blank">Windows PXE ADK</a></h3><p>Ce projet consiste à déployer un serveur PXE combinant Windows Server et solutions open source, pour automatiser et sécuriser l'installation de machines à partir d'images système Windows.</p></div>
        
         <div class="card"><h3><a href="https://github.com/Tom-rib/Documentation_Script_Systeme_Securite" target="_blank">Virtualisation, Scripts et Sécurité</a></h3><p>Ce projet est un guide structuré autour de la création et de la gestion d'une machine virtuelle sous Debian, des manipulations avancées en ligne de commande, de la surveillance système, de l'automatisation de tâches et des bonnes pratiques de sécurité. Il couvre également la gestion des dépendances logicielles et l'interaction sécurisée avec des APIs web.</p></div>
 
@@ -110,7 +111,6 @@
     <h2>Parcours Professionnel & Formations</h2>
        <p>root@Tom_Ribero:~$  dpkg --list | grep "diplômes"</p>
        <p>============================================================</p>
-      
   </div>
   <div class="grid">
 
@@ -129,7 +129,7 @@
       <p>2014</p>
       <p><strong>BTS en Systèmes Électroniques</strong></p>
       <p>Conception et création de circuits électroniques : études et réalisation de circuits analogiques et numériques.</p>
-      <p>Programmation de systèmes électroniques en C pour le contrôle et l’automatisation des dispositifs.</p>
+      <p>Programmation de systèmes électroniques en C pour le contrôle et l'automatisation des dispositifs.</p>
       <p><code class="code-terminal code-completed">$ $ ./code-completed_Bts_Sys_Elec </code></p>
       <p> Completed</p>
     </div>
@@ -138,8 +138,8 @@
       <h4>Lycée du Rempart</h4>
       <p>2014</p>
       <p><strong>Habilitation Électrique : BR</strong></p>
-      <p>Consignation d’une partie d’une installation pour son propre compte ou pour un exécutant sous sa responsabilité.</p>
-      <p>Respect strict des règles de sécurité pour la manipulation et l’entretien des installations électriques, mécaniques et électroniques.</p>
+      <p>Consignation d'une partie d'une installation pour son propre compte ou pour un exécutant sous sa responsabilité.</p>
+      <p>Respect strict des règles de sécurité pour la manipulation et l'entretien des installations électriques, mécaniques et électroniques.</p>
       <p><code class="code-terminal code-completed">$ ./code-completed_Habil_BR </code></p>
       <p> Completed</p>
     </div>
@@ -175,6 +175,9 @@
       <h3><span class="prompt">$</span> Virtualisation & Cloud</h3>
       <div class="skill-category">
         <p class="skill-item"><span class="dir">├──</span> VMWare</p>
+        <p class="skill-item"><span class="dir">├──</span> AWS (EC2, S3, RDS, Lambda, CloudWatch)</p>
+        <p class="skill-item"><span class="dir">├──</span> Microsoft Azure</p>
+        <p class="skill-item"><span class="dir">├──</span> Entra ID (Gestion d'identités)</p>
         <p class="skill-item"><span class="dir">├──</span> Configuration Cisco</p>
         <p class="skill-item"><span class="dir">├──</span> Supervision d'infrastructures virtuelles</p>
         <p class="skill-item"><span class="dir">├──</span> Stockage et sauvegarde de données</p>
@@ -182,12 +185,15 @@
       </div>
     </div>
 
-    <!-- Automatisation & Scripts -->
+   <!-- Automatisation & Scripts -->
     <div class="terminal-card">
       <h3><span class="prompt">$</span> Automatisation & Scripts</h3>
       <div class="skill-category">
-        <p class="skill-item"><span class="dir">├──</span> Bash, PowerShell</p>
+        <p class="skill-item"><span class="dir">├──</span> Script Bash, PowerShell, Python</p>
         <p class="skill-item"><span class="dir">├──</span> Crontab</p>
+        <p class="skill-item"><span class="dir">├──</span> Expressions régulières (Regex)</p>
+        <p class="skill-item"><span class="dir">├──</span> Docker & Containerization</p>
+        <p class="skill-item"><span class="dir">├──</span> Git & GitHub</p>
         <p class="skill-item"><span class="dir">└──</span> Déploiements automatisés</p>
       </div>
     </div>
@@ -196,154 +202,128 @@
     <div class="terminal-card">
       <h3><span class="prompt">$</span> Programmation & Web</h3>
       <div class="skill-category">
-        <p class="skill-item"><span class="dir">├──</span> Python3, C, Arduino</p>
+        <p class="skill-item"><span class="dir">├──</span> Python3, C, C++, Arduino</p>
         <p class="skill-item"><span class="dir">├──</span> PHP, HTML, CSS3</p>
         <p class="skill-item"><span class="dir">└──</span> Conception d'infrastructures</p>
       </div>
     </div>
 
-    <!-- Outils & Développement -->
+ <!-- Outils & Développement -->
     <div class="terminal-card">
       <h3><span class="prompt">$</span> Outils & Développement</h3>
       <div class="skill-category">
         <p class="skill-item"><span class="dir">├──</span> VS Code</p>
+        <p class="skill-item"><span class="dir">├──</span> Vim & Nano</p>
+        <p class="skill-item"><span class="dir">├──</span> Claude Code</p>
+        <p class="skill-item"><span class="dir">├──</span> GitHub Copilot</p>
+        <p class="skill-item"><span class="dir">├──</span> ChatGPT</p>
         <p class="skill-item"><span class="dir">├──</span> Administration via CLI</p>
         <p class="skill-item"><span class="dir">└──</span> Supervision réseau et systèmes</p>
-        
       </div>
     </div>
 
-    <!-- Cybersécurité -->
+ <!-- Cybersécurité -->
     <div class="terminal-card">
-      <h3><span class="prompt">$</span> Compétences à venir (Cybersécurité) </h3>
+      <h3><span class="prompt">$</span> Cybersécurité</h3>
       <div class="skill-category">
-        <p class="skill-item"><span class="dir">├──</span> Gouvernance</p>
-        <p class="skill-item"><span class="dir">├──</span> Pentesting</p>
-        <p class="skill-item"><span class="dir">├──</span> Automatisation sécurité</p>
-        <p class="skill-item"><span class="dir">└──</span> Maîtrise des conteneurs Docker</p>
+        <p class="skill-item"><span class="dir">├──</span> Gestion des identités (IAM)</p>
+        <p class="skill-item"><span class="dir">└──</span> Sécurité réseau & Pare-feu</p>
+        <p style="margin-top: 10px; opacity: 0.7;"><em>À venir : Pentesting, Analyse de vulnérabilités, Automatisation sécurité, Conformité & Gouvernance, Réponse aux incidents</em></p>
       </div>
     </div>
   </div>
 </section>
 
-
 <!-- Certifications -->
 <section id="certifications">
   <div class="section-head">
     <h2>Certifications</h2>
-     <p>root@Tom_Ribero:~$ nano Objectif.txt</p>
-     <p>============================================================</p>
-     <p>Objectif : Mon objectif est de consolider mes compétences d’administrateur systèmes et réseaux pour évoluer vers l’administration cloud et la gestion SysOps, afin d’acquérir une expertise complète en automatisation, supervision d’infrastructures et sécurité, et enfin devenir un ingénieur DevOps capable de déployer et sécuriser des environnements complexes avec une maîtrise approfondie de la cybersécurité.</p>
-      <p>============================================================</p>
+    <p>root@Tom_Ribero:~$ nano roadmap.txt</p>
+    <p>============================================================</p>
+    <p>Profil cible : Cloud / DevOps / Security Engineer</p>
+    <p>Principe : Fondations solides → Cloud Ops → DevOps → Cyber défensive → Offensive</p>
+    <p>============================================================</p>
   </div>
 
-  <!-- Base / Fondamentaux -->
-  <h3 style="color:#2563eb; margin-top:2rem;">💻 Base / Fondamentaux</h3>
-  <div class="grid">
-    <div class="card">
-      <h4>CompTIA Network+</h4>
-      <p>En cours</p>
-      <p><code class="code-installing">$ ./installing_network_plus</code></p>
+  <div class="terminal-grid">
+    <!-- Base / Fondamentaux -->
+    <div class="terminal-card">
+      <h3><span class="prompt">$</span> Base / Fondamentaux</h3>
+      <div class="skill-category">
+        <p class="skill-item"><span class="dir">├──</span> Cisco CCNA <code class="code-todo">planned</code></p>
+        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">Networking fondamental (routage, switching, sécurité réseau)</p>
+        <p class="skill-item"><span class="dir">├──</span> RHCSA <code class="code-todo">planned</code></p>
+        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">Admin Linux certifiée (user mgmt, services, troubleshooting)</p>
+        <p class="skill-item"><span class="dir">└──</span> CompTIA Security+ <code class="code-coming-future">future</code></p>
+        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">Fondamentaux cybersécurité (threats, encryption, IAM)</p>
+      </div>
     </div>
-    <div class="card">
-      <h4>CompTIA Linux+</h4>
-      <p>En cours</p>
-      <p><code class="code-installing">$ ./installing_linux_plus</code></p>
-    </div>
-    <div class="card">
-      <h4>ITIL Foundation</h4>
-      <p>Prévu</p>
-      <p><code class="code-todo">$ ./planned_itil_foundation</code></p>
-    </div>
-  </div>
 
-  <!-- Admin Systèmes / Réseaux -->
-  <h3 style="color:#2563eb; margin-top:2rem;">🖥️ Admin Systèmes / Réseaux</h3>
-  <div class="grid">
-    <div class="card">
-      <h4>LPIC-1</h4>
-      <p>Prévu</p>
-      <p><code class="code-todo">$ ./planned_lpic1</code></p>
+    <!-- Admin Systèmes / Réseaux -->
+    <div class="terminal-card">
+      <h3><span class="prompt">$</span> Admin Systèmes / Réseaux</h3>
+      <div class="skill-category">
+        <p class="skill-item"><span class="dir">├──</span> AZ-800 <code class="code-todo">planned</code></p>
+        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">Windows Server on-premises (AD, DNS, DHCP, services)</p>
+        <p class="skill-item"><span class="dir">├──</span> AZ-801 <code class="code-coming">coming</code></p>
+        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">Windows Server hybride (Azure Arc, identity sync)</p>
+        <p class="skill-item"><span class="dir">└──</span> RHCE <code class="code-coming-future">future</code></p>
+        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">Red Hat Expert (automation, troubleshooting avancé)</p>
+      </div>
     </div>
-    <div class="card">
-      <h4>Windows Server Hybrid Admin</h4>
-      <p>Prévu</p>
-      <p><code class="code-todo">$ ./planned_windows_hybrid</code></p>
-    </div>
-    <div class="card">
-      <h4>Cisco CCNA</h4>
-      <p>Prévu</p>
-      <p><code class="code-todo">$ ./planned_ccna</code></p>
-    </div>
-  </div>
 
-  <!-- Cloud -->
-  <h3 style="color:#2563eb; margin-top:2rem;">☁️ Cloud</h3>
-  <div class="grid">
-    <div class="card">
-      <h4>AWS Cloud Practitioner</h4>
-      <p>Prévu</p>
-      <p><code class="code-todo">$ ./planned_aws_cp</code></p>
+    <!-- Cloud -->
+    <div class="terminal-card">
+      <h3><span class="prompt">$</span> Cloud</h3>
+      <div class="skill-category">
+        <p class="skill-item"><span class="dir">├──</span> AWS SAA <code class="code-todo">planned</code></p>
+        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">AWS architecture et design (EC2, S3, RDS, networking)</p>
+        <p class="skill-item"><span class="dir">├──</span> MS-102 <code class="code-todo">planned</code></p>
+        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">Microsoft Cloud Admin (M365, Entra ID, Exchange)</p>
+        <p class="skill-item"><span class="dir">└──</span> AWS Security Specialty <code class="code-coming-future">future</code></p>
+        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">Sécurité AWS avancée (IAM, encryption, compliance)</p>
+      </div>
     </div>
-    <div class="card">
-      <h4>AWS Solutions Architect – Associate</h4>
-      <p>Prévu</p>
-      <p><code class="code-todo">$ ./planned_aws_saa</code></p>
-    </div>
-    <div class="card">
-      <h4>Azure Administrator (AZ-104)</h4>
-      <p>Prévu</p>
-      <p><code class="code-todo">$ ./planned_azure_az104</code></p>
-    </div>
-    <div class="card">
-      <h4>Google Associate Cloud Engineer</h4>
-      <p>Prévu</p>
-      <p><code class="code-todo">$ ./planned_google_ace</code></p>
-    </div>
-  </div>
 
-  <!-- SysOps -->
-  <h3 style="color:#2563eb; margin-top:2rem;">⚙️ SysOps / Cloud Operations</h3>
-  <div class="grid">
-    <div class="card">
-      <h4>AWS SysOps Administrator – Associate</h4>
-      <p>Prévu</p>
-      <p><code class="code-todo">$ ./planned_aws_sysops</code></p>
+    <!-- SysOps / Cloud Operations -->
+    <div class="terminal-card">
+      <h3><span class="prompt">$</span> SysOps / Cloud Operations</h3>
+      <div class="skill-category">
+        <p class="skill-item"><span class="dir">├──</span> AWS SysOps Admin <code class="code-coming">coming</code></p>
+        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">AWS operations et maintenance (monitoring, deployment)</p>
+        <p class="skill-item"><span class="dir">└──</span> Terraform Associate <code class="code-coming">coming</code></p>
+        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">Infrastructure as Code (IaC) multi-cloud</p>
+      </div>
     </div>
-    <div class="card">
-      <h4>HashiCorp Terraform Associate</h4>
-      <p>Prévu</p>
-      <p><code class="code-todo">$ ./planned_terraform</code></p>
-    </div>
-    <div class="card">
-      <h4>Kubernetes CKA</h4>
-      <p>Prévu</p>
-      <p><code class="code-todo">$ ./planned_kubernetes_cka</code></p>
-    </div>
-  </div>
 
-  <!-- DevOps -->
-  <h3 style="color:#2563eb; margin-top:2rem;">🚀 DevOps</h3>
-  <div class="grid">
-    <div class="card">
-      <h4>AWS DevOps Engineer – Professional</h4>
-      <p>Prévu</p>
-      <p><code class="code-todo">$ ./planned_aws_devops</code></p>
+    <!-- DevOps -->
+    <div class="terminal-card">
+      <h3><span class="prompt">$</span> DevOps</h3>
+      <div class="skill-category">
+        <p class="skill-item"><span class="dir">├──</span> Docker Certified Associate <code class="code-coming-future">future</code></p>
+        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">Containerization (images, networks, storage)</p>
+        <p class="skill-item"><span class="dir">├──</span> Kubernetes CKA <code class="code-coming-future">future</code></p>
+        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">K8s orchestration et administration</p>
+        <p class="skill-item"><span class="dir">├──</span> GitLab CI/CD <code class="code-coming-future">future</code></p>
+        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">Pipelines d'automatisation et déploiement continu</p>
+        <p class="skill-item"><span class="dir">├──</span> Kubernetes CKS <code class="code-coming-future">future</code></p>
+        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">K8s sécurité avancée (RBAC, policies)</p>
+        <p class="skill-item"><span class="dir">└──</span> Vault Associate <code class="code-coming-future">future</code></p>
+        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">Gestion des secrets et authentification</p>
+      </div>
     </div>
-    <div class="card">
-      <h4>Docker Certified Associate</h4>
-      <p>Prévu</p>
-      <p><code class="code-todo">$ ./planned_docker</code></p>
-    </div>
-    <div class="card">
-      <h4>GitLab CI/CD Specialist</h4>
-      <p>Prévu</p>
-      <p><code class="code-todo">$ ./planned_gitlab</code></p>
-    </div>
-    <div class="card">
-      <h4>HashiCorp Vault Associate</h4>
-      <p>Prévu</p>
-      <p><code class="code-todo">$ ./planned_vault</code></p>
+
+    <!-- Cybersécurité -->
+    <div class="terminal-card">
+      <h3><span class="prompt">$</span> Cybersécurité</h3>
+      <div class="skill-category">
+        <p class="skill-item"><span class="dir">├──</span> SC-300 <code class="code-coming-future">future</code></p>
+        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">Microsoft Identity Engineer (Entra ID, MFA, passwordless)</p>
+        <p class="skill-item"><span class="dir">├──</span> eJPT <code class="code-coming-future">future</code></p>
+        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">Entry-level Pentesting (reconnaissance, exploitation)</p>
+        <p class="skill-item"><span class="dir">└──</span> OSCP <code class="code-coming-future">future</code></p>
+        <p style="margin-left: 1.5rem; opacity: 0.8; font-size: 0.9rem;">Advanced Pentesting (labs, rapport technique)</p>
+      </div>
     </div>
   </div>
 </section>

@@ -293,5 +293,35 @@ code {
   font-size:0.95rem;
 }
 .code-installing { color: #facc15; } /* jaune */
-.code-todo { color: #38bdf8; }       /* bleu clair */
+.code-todo { 
+  background: #dbeafe;
+  color: #1e40af;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.85rem;
+}       /* bleu clair */
 .code-completed { color: #22c55e; }  /* vert */
+.code-coming { 
+  background: #fef08a;
+  color: #854d0e;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.85rem;
+}  /* jaune amber */
+.code-coming-future { 
+  background: #f3e8ff;
+  color: #6b21a8;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.85rem;
+}  /* violet/purple */
+
+
+
+
+.terminal-card code {
+  background: transparent;
+  padding: 0;
+  margin-left: 0.5rem;
+  font-size: 0.75rem;
+}
