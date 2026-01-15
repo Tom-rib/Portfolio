@@ -8,7 +8,7 @@ Découvrez mes projets, mon parcours professionnel, mes formations et certificat
 
 🌟 **À propos**  
 Étudiant en Bachelor IT (B2) – Administrateur Systèmes, Réseaux & Cybersécurité  
-📍 Marseille, France | Alternance dès Octobre 2025  
+📍 Marseille, France |Recherche un Stage de 2 mois du 10 mai -> 10 juillet 2026  && une Alternance Septembre 2026  
 Objectif : **passer de l’admin systèmes/réseaux à DevOps Engineer**, avec expertise Cloud et cybersécurité.
 
 💻 **Projets clés**  
