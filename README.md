@@ -18,6 +18,7 @@ Objectif : **passer de l’admin systèmes/réseaux à DevOps Engineer**, avec e
 - [TrueNAS + Vaultwarden](https://github.com/Tom-rib/Documentation-Serveur-TrueNas-Scale) : Serveur sécurisé et gestion utilisateurs.  
 - [Active Directory](https://github.com/Tom-rib/Documentation_Serveur_Windows_ActiveDirectory)  
 - [Windows PXE ADK](https://github.com/Tom-rib/Documentation_Serveur_Windows_PXE_ADK)
+-[Architecte_AWS](https://github.com/Tom-rib/Architecte_AWS)
 
 📄 **Formations**  
 - Bachelor IT – Administrateur Systèmes, Réseaux & Sécurité (2024-2027) – La Plateforme  
