@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tom Ribero — Administrateur Systèmes, Réseaux & Sécurité</title>
-  <meta name="description" content="Portfolio de Tom Ribero, étudiant en Bachelor IT à Marseille. Projets d'infrastructure : Ansible, Kubernetes K3S, Docker Swarm, AWS, Active Directory, virtualisation.">
+  <meta name="description" content="Portfolio de Tom Ribero, étudiant en Bachelor IT à Marseille. Projets d'infrastructure : Terraform, Ansible, Kubernetes K3S, Docker Swarm, AWS, CI/CD GitHub Actions, Active Directory, virtualisation.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,7 +62,8 @@
 
             <p class="hero__pitch">
               Je construis et documente des infrastructures de bout en bout : clusters Kubernetes et
-              Docker Swarm, automatisation Ansible, annuaires Active Directory et Entra ID, hyperviseurs.
+              Docker Swarm, provisionnement Terraform, automatisation Ansible, annuaires Active
+              Directory et Entra ID, hyperviseurs.
               Chaque projet ci-dessous est monté en labo, testé en panne réelle, puis documenté pour être
               rejouable par quelqu'un d'autre. C'est ce que je cherche à faire en entreprise.
             </p>
@@ -111,12 +112,35 @@
           </p>
         </div>
 
-        <h3 class="subhead">Les quatre les plus représentatifs</h3>
+        <h3 class="subhead">Les cinq les plus représentatifs</h3>
         <div class="grid">
+
+          <article class="card card--featured" id="p-terraform">
+            <div class="card__head">
+              <h3><a href="https://github.com/Tom-rib/Terraform" target="_blank" rel="noopener">terraform-lab-cyber</a></h3>
+              <span class="badge badge--done">terminé</span>
+            </div>
+            <p class="card__desc">
+              Infrastructure as Code appliquée à un laboratoire de cybersécurité : un seul
+              <code>terraform apply</code> clone deux VM Debian&nbsp;12 sous VMware Workstation,
+              les configure par SSH, puis scanne la cible depuis la machine attaquante.
+            </p>
+            <ul class="card__did">
+              <li>Pilotage de l'hyperviseur via l'API <code>vmrest</code> et le provider <code>elsudano/vmworkstation</code></li>
+              <li>Code découpé et versionné : <code>versions.tf</code>, <code>variables.tf</code> avec validations, <code>outputs.tf</code></li>
+              <li>Provisioners <code>remote-exec</code> : outillage nmap/masscan côté attaquant, service exposé côté cible</li>
+              <li>Contournement d'une limite du provider (adresse IP non implémentée) par data source <code>external</code></li>
+              <li>Configuration complémentaire en Ansible, inventaire généré depuis le state</li>
+              <li>Aucun secret dans le dépôt : variables <code>TF_VAR_*</code> hors versionnement</li>
+            </ul>
+            <ul class="stack">
+              <li>Terraform</li><li>IaC</li><li>VMware Workstation</li><li>Debian 12</li><li>Ansible</li><li>PowerShell</li><li>nmap</li>
+            </ul>
+          </article>
 
           <article class="card card--featured" id="p-ansible">
             <div class="card__head">
-              <h3>ansible-hardening</h3>
+              <h3><a href="https://github.com/Tom-rib/Ansible" target="_blank" rel="noopener">ansible-hardening</a></h3>
               <span class="badge badge--done">terminé</span>
             </div>
             <p class="card__desc">
@@ -202,6 +226,29 @@
 
         <h3 class="subhead subhead--spaced">Le reste du labo</h3>
         <div class="grid">
+
+          <article class="card" id="p-cicd">
+            <div class="card__head">
+              <h3><a href="https://github.com/Tom-rib/Github_Action_CI-CD" target="_blank" rel="noopener">github-actions-ci-cd</a></h3>
+              <span class="badge badge--done">terminé</span>
+            </div>
+            <p class="card__desc">
+              Chaîne d'intégration et de déploiement continus sécurisée : chaque push sur la branche
+              principale déclenche les vérifications, et seul un build vert déclenche le déploiement
+              — sans qu'aucun secret ne transite par le dépôt.
+            </p>
+            <ul class="card__did">
+              <li>Workflow GitHub Actions complet, découpé en 8 étapes du build au rollback</li>
+              <li>Application web minimale + script Bash de 5 contrôles d'intégrité bloquants</li>
+              <li>Déploiement idempotent par playbook Ansible sur Debian (Nginx + vhost validé)</li>
+              <li>Clés SSH en GitHub Secrets, chargées via <code>ssh-agent</code> sans écriture sur disque</li>
+              <li><code>inventory.ini</code> généré à la volée en <code>600</code> puis détruit, contrôle MITM par <code>known_hosts</code></li>
+              <li>Traçabilité : le SHA du commit déployé est inscrit dans la page servie</li>
+            </ul>
+            <ul class="stack">
+              <li>GitHub Actions</li><li>CI/CD</li><li>Bash</li><li>Ansible</li><li>Nginx</li><li>SSH</li><li>Debian</li>
+            </ul>
+          </article>
 
           <article class="card" id="p-entra">
             <div class="card__head">
@@ -429,7 +476,7 @@
               <li class="skill">
                 <span class="skill__name">VMware (Workstation, ESXi)</span>
                 <span class="lvl lvl--3" role="img" aria-label="Niveau solide"><i></i><i></i><i></i></span>
-                <span class="skill__proof">↳ <a href="#p-hyperviseurs">nexus-virtualis</a></span>
+                <span class="skill__proof">↳ <a href="#p-hyperviseurs">nexus-virtualis</a>, <a href="#p-terraform">terraform-lab-cyber</a></span>
               </li>
               <li class="skill">
                 <span class="skill__name">Proxmox VE, Hyper-V, XCP-ng</span>
@@ -468,14 +515,24 @@
                 <span class="skill__proof">↳ tous les projets sont versionnés et documentés</span>
               </li>
               <li class="skill">
+                <span class="skill__name">CI/CD (GitHub Actions)</span>
+                <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
+                <span class="skill__proof">↳ <a href="#p-cicd">github-actions-ci-cd</a></span>
+              </li>
+              <li class="skill">
+                <span class="skill__name">Terraform &amp; Infrastructure as Code</span>
+                <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
+                <span class="skill__proof">↳ <a href="#p-terraform">terraform-lab-cyber</a></span>
+              </li>
+              <li class="skill">
                 <span class="skill__name">Ansible (playbooks, rôles, Vault)</span>
                 <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
-                <span class="skill__proof">↳ <a href="#p-ansible">ansible-hardening</a></span>
+                <span class="skill__proof">↳ <a href="#p-ansible">ansible-hardening</a>, <a href="#p-terraform">terraform-lab-cyber</a></span>
               </li>
               <li class="skill">
                 <span class="skill__name">PowerShell 7 &amp; Microsoft Graph</span>
                 <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
-                <span class="skill__proof">↳ <a href="#p-entra">ad-enterprise</a></span>
+                <span class="skill__proof">↳ <a href="#p-entra">ad-enterprise</a>, <a href="#p-terraform">terraform-lab-cyber</a></span>
               </li>
               <li class="skill">
                 <span class="skill__name">Python 3</span>
@@ -516,6 +573,11 @@
                 <span class="skill__name">Réponse à incident (procédures)</span>
                 <span class="lvl lvl--1" role="img" aria-label="Niveau notions"><i></i><i></i><i></i></span>
                 <span class="skill__proof">↳ <a href="#p-ansible">ansible-hardening</a></span>
+              </li>
+              <li class="skill">
+                <span class="skill__name">Reconnaissance réseau (nmap, masscan)</span>
+                <span class="lvl lvl--1" role="img" aria-label="Niveau notions"><i></i><i></i><i></i></span>
+                <span class="skill__proof">↳ <a href="#p-terraform">terraform-lab-cyber</a></span>
               </li>
               <li class="skill">
                 <span class="skill__name">Analyse réseau (Wireshark)</span>

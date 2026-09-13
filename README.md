@@ -25,6 +25,7 @@ spécialisation en cybersécurité.
 
 | Projet | Ce que j'y ai fait |
 |---|---|
+| **[Terraform — lab de cybersécurité](https://github.com/Tom-rib/Terraform)** | Infrastructure as Code sur VMware Workstation via l'API `vmrest` : deux VM Debian 12 clonées et configurées par provisioners `remote-exec`, découverte d'IP par data source `external`, configuration complémentaire Ansible, secrets hors dépôt |
 | **Ansible — automatisation & durcissement** | Playbooks et rôles réutilisables, hardening SSH/UFW/PAM, centralisation des logs via Filebeat, secrets chiffrés avec Vault, scénario de réponse à incident |
 | **[Kubernetes K3S](https://github.com/Tom-rib/kubernetes)** | Cluster 3 nœuds sur Debian, applications conteneurisées avec replicas, stockage persistant, ConfigMaps/Secrets, RBAC, déploiements Helm |
 | **[Docker Swarm](https://github.com/Tom-rib/Docker_Swarm)** | Cluster multi-nœuds haute disponibilité, volumes NFS partagés, plans PCA/PRA éprouvés par tests de panne simulée |
@@ -32,6 +33,7 @@ spécialisation en cybersécurité.
 
 ### Le reste du labo
 
+- **[GitHub Actions — CI/CD sécurisé](https://github.com/Tom-rib/Github_Action_CI-CD)** — Pipeline complet build → vérifications → déploiement Ansible sur Nginx, secrets en GitHub Secrets, `ssh-agent` sans clé sur disque, inventaire éphémère et stratégie de rollback
 - **[ad-enterprise](https://github.com/Tom-rib/ad-enterprise)** — Sécurisation Microsoft Entra ID : modèle en tiers, MFA, accès conditionnel, automatisation PowerShell/Graph
 - **[NexusVirtualis](https://github.com/Tom-rib/NexusVirtualis)** — Étude comparative de 4 hyperviseurs type 1 (ESXi, Proxmox, Hyper-V, XCP-ng) en virtualisation imbriquée
 - **[MINILAB](https://github.com/Tom-rib/documentation_minilab)** — Infrastructure réseau associative : LDAP, NFS, DNS, DHCP, VPN, clients légers Debian
