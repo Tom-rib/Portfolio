@@ -12,7 +12,7 @@ Portfolio personnel : projets d'infrastructure, parcours et compétences.
 Bachelor IT à La Plateforme, Marseille (2024–2027, titre RNCP niveau 6)
 
 📍 Marseille, France
-🔍 Recherche une **alternance à partir de septembre 2026** (rythme 4 semaines entreprise / 1 semaine école)
+🔍 Recherche une **alternance de 3 ans à partir de septembre 2027** — cycle d'ingénieur, spé administration systèmes, réseaux et cybersécurité
 
 🎯 **Trajectoire** : administration systèmes & réseaux → Cloud / SysOps → DevOps, avec une
 spécialisation en cybersécurité.
@@ -47,6 +47,7 @@ spécialisation en cybersécurité.
 
 ## 📄 Formation
 
+- **Cycle d'ingénieur — spé Administration systèmes, réseaux et cybersécurité** (2027–2030, en alternance) — à venir
 - **Bachelor IT — Administrateur Systèmes, Réseaux et Sécurité** (2024–2027) — La Plateforme, Marseille
 - **BTS Systèmes Électroniques** (2014) — Lycée du Rempart, Marseille
 - **Habilitation électrique BR** (2014)
