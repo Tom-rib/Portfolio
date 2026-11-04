@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tom Ribero — Administrateur Systèmes, Réseaux & Sécurité</title>
-  <meta name="description" content="Portfolio de Tom Ribero, étudiant en Bachelor IT à Marseille. Projets d'infrastructure et de cybersécurité : conformité NIS2, Terraform, Ansible, Kubernetes K3S, Docker Swarm, AWS, CI/CD GitHub Actions, bastion Guacamole, Active Directory.">
+  <meta name="description" content="Portfolio de Tom Ribero, étudiant en Bachelor IT à Marseille. Projets d'infrastructure et de cybersécurité : conformité NIS2, Terraform, Ansible, Kubernetes K3S, Docker Swarm, AWS, CI/CD GitHub Actions, bastion Guacamole, virtualisation.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -427,23 +427,6 @@
             <ul class="stack"><li>TrueNAS Scale</li><li>ZFS</li><li>Vaultwarden</li><li>2FA</li><li>SFTP</li></ul>
           </article>
 
-          <article class="card" id="p-ad">
-            <div class="card__head">
-              <h3><a href="https://github.com/Tom-rib/Documentation_Serveur_Windows_ActiveDirectory" target="_blank" rel="noopener">active-directory</a></h3>
-              <span class="badge badge--done">terminé</span>
-            </div>
-            <p class="card__desc">
-              Infrastructure Windows Server avec Active Directory : gestion centralisée des
-              utilisateurs, des permissions et des ressources réseau.
-            </p>
-            <ul class="card__did">
-              <li>Promotion du contrôleur de domaine et structure des OU</li>
-              <li>Stratégies de groupe et délégation de permissions</li>
-              <li>Scripts PowerShell d'automatisation des comptes</li>
-            </ul>
-            <ul class="stack"><li>Windows Server</li><li>Active Directory</li><li>GPO</li><li>PowerShell</li></ul>
-          </article>
-
           <article class="card" id="p-pxe">
             <div class="card__head">
               <h3><a href="https://github.com/Tom-rib/Documentation_Serveur_Windows_PXE_ADK" target="_blank" rel="noopener">deploiement-pxe</a></h3>
@@ -458,22 +441,6 @@
               <li>Installations automatisées et reproductibles</li>
             </ul>
             <ul class="stack"><li>PXE</li><li>Windows ADK</li><li>DHCP/TFTP</li></ul>
-          </article>
-
-          <article class="card" id="p-scripts">
-            <div class="card__head">
-              <h3><a href="https://github.com/Tom-rib/Documentation_Script_Systeme_Securite" target="_blank" rel="noopener">scripts-systeme-securite</a></h3>
-              <span class="badge badge--done">terminé</span>
-            </div>
-            <p class="card__desc">
-              Socle d'administration Debian en ligne de commande : surveillance système,
-              automatisation de tâches et bonnes pratiques de sécurité.
-            </p>
-            <ul class="card__did">
-              <li>Manipulations avancées en CLI et scripts Bash</li>
-              <li>Surveillance système et tâches planifiées (cron)</li>
-            </ul>
-            <ul class="stack"><li>Debian</li><li>Bash</li><li>cron</li><li>systemd</li></ul>
           </article>
 
           <article class="card" id="p-arduino">
@@ -527,7 +494,7 @@
               <li class="skill">
                 <span class="skill__name">Windows Server &amp; Active Directory</span>
                 <span class="lvl lvl--3" role="img" aria-label="Niveau solide"><i></i><i></i><i></i></span>
-                <span class="skill__proof">↳ <a href="#p-ad">active-directory</a>, <a href="#p-pxe">deploiement-pxe</a></span>
+                <span class="skill__proof">↳ <a href="#p-pxe">deploiement-pxe</a></span>
               </li>
               <li class="skill">
                 <span class="skill__name">SSH, SFTP, accès distant sécurisé</span>
@@ -614,7 +581,7 @@
               <li class="skill">
                 <span class="skill__name">Bash &amp; ligne de commande</span>
                 <span class="lvl lvl--3" role="img" aria-label="Niveau solide"><i></i><i></i><i></i></span>
-                <span class="skill__proof">↳ <a href="#p-scripts">scripts-systeme-securite</a></span>
+                <span class="skill__proof">↳ <a href="#p-services-linux">services-linux-scriptes</a>, <a href="#p-cicd">github-actions-ci-cd</a></span>
               </li>
               <li class="skill">
                 <span class="skill__name">Git &amp; GitHub</span>
@@ -648,7 +615,6 @@
               <li class="skill">
                 <span class="skill__name">Tâches planifiées (cron, systemd timers)</span>
                 <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
-                <span class="skill__proof">↳ <a href="#p-scripts">scripts-systeme-securite</a></span>
               </li>
             </ul>
           </div>

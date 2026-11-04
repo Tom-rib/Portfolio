@@ -43,9 +43,7 @@ spécialisation en cybersécurité.
 - **[NexusVirtualis](https://github.com/Tom-rib/NexusVirtualis)** — Étude comparative de 4 hyperviseurs type 1 (ESXi, Proxmox, Hyper-V, XCP-ng) en virtualisation imbriquée
 - **[MINILAB](https://github.com/Tom-rib/documentation_minilab)** — Infrastructure réseau associative : LDAP, NFS, DNS, DHCP, VPN, clients légers Debian
 - **[TrueNAS + Vaultwarden](https://github.com/Tom-rib/Documentation-Serveur-TrueNas-Scale)** — Serveur de stockage sécurisé, gestionnaire de mots de passe auto-hébergé, 2FA
-- **[Active Directory](https://github.com/Tom-rib/Documentation_Serveur_Windows_ActiveDirectory)** — Domaine Windows Server, OU, GPO, automatisation PowerShell
 - **[Déploiement PXE](https://github.com/Tom-rib/Documentation_Serveur_Windows_PXE_ADK)** — Installation de postes en masse via PXE et Windows ADK
-- **[Scripts système & sécurité](https://github.com/Tom-rib/Documentation_Script_Systeme_Securite)** — Administration Debian en CLI, supervision, tâches planifiées
 - **[Arduino](https://github.com/Tom-rib/Arduino)** — Électronique embarquée et programmation C, dans la continuité du BTS
 
 ---
