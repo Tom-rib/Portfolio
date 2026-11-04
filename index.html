@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tom Ribero — Administrateur Systèmes, Réseaux & Sécurité</title>
-  <meta name="description" content="Portfolio de Tom Ribero, étudiant en Bachelor IT à Marseille. Projets d'infrastructure et de cybersécurité : conformité NIS2, mini-SOC Wazuh, Terraform, Ansible, Kubernetes K3S, Docker Swarm, AWS, CI/CD GitHub Actions, bastion Guacamole, Active Directory.">
+  <meta name="description" content="Portfolio de Tom Ribero, étudiant en Bachelor IT à Marseille. Projets d'infrastructure et de cybersécurité : conformité NIS2, Terraform, Ansible, Kubernetes K3S, Docker Swarm, AWS, CI/CD GitHub Actions, bastion Guacamole, Active Directory.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -134,28 +134,6 @@
             </ul>
             <ul class="stack">
               <li>NIS2</li><li>Gouvernance</li><li>Segmentation IT/OT</li><li>VLAN</li><li>Pare-feu</li><li>VPN</li><li>Mermaid</li>
-            </ul>
-          </article>
-
-          <article class="card card--featured" id="p-soc">
-            <div class="card__head">
-              <h3><a href="https://github.com/Tom-rib/Mini_SOC" target="_blank" rel="noopener">mini-soc-blueteam</a></h3>
-              <span class="badge badge--ongoing">en cours</span>
-            </div>
-            <p class="card__desc">
-              SOC miniature sous Rocky Linux réparti sur trois VM — une cible durcie, un SIEM et
-              une station de supervision — où les attaques sont rejouées puis détectées et traitées
-              côté Blue Team.
-            </p>
-            <ul class="card__did">
-              <li>Cible durcie : Nginx, SSH, Fail2ban, Auditd, firewalld, SELinux en <code>enforcing</code>, audit Lynis</li>
-              <li>SIEM Wazuh + Elasticsearch avec règles personnalisées : brute force SSH, <code>sudo</code>, scans, uploads, connexions hors horaires</li>
-              <li>Supervision Prometheus, Grafana et Node Exporter</li>
-              <li>Attaques rejouées : scan Nmap, brute force SSH, upload malveillant, élévation de privilèges</li>
-              <li>Playbooks de réponse à incident et scripts Bash/Ansible de réaction semi-automatique</li>
-            </ul>
-            <ul class="stack">
-              <li>Rocky Linux</li><li>Wazuh</li><li>Elasticsearch</li><li>Prometheus</li><li>Grafana</li><li>SELinux</li><li>Fail2ban</li><li>Ansible</li>
             </ul>
           </article>
 
@@ -681,7 +659,7 @@
               <li class="skill">
                 <span class="skill__name">Durcissement Linux (SSH, UFW, PAM)</span>
                 <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
-                <span class="skill__proof">↳ <a href="#p-ansible">ansible-hardening</a>, <a href="#p-soc">mini-soc-blueteam</a></span>
+                <span class="skill__proof">↳ <a href="#p-ansible">ansible-hardening</a></span>
               </li>
               <li class="skill">
                 <span class="skill__name">Gestion des identités, MFA, accès conditionnel</span>
@@ -689,9 +667,9 @@
                 <span class="skill__proof">↳ <a href="#p-entra">ad-enterprise</a>, <a href="#p-bastion">bastion-guacamole</a></span>
               </li>
               <li class="skill">
-                <span class="skill__name">Centralisation &amp; analyse de logs (Filebeat, Wazuh)</span>
+                <span class="skill__name">Centralisation &amp; analyse de logs (Filebeat)</span>
                 <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
-                <span class="skill__proof">↳ <a href="#p-ansible">ansible-hardening</a>, <a href="#p-soc">mini-soc-blueteam</a></span>
+                <span class="skill__proof">↳ <a href="#p-ansible">ansible-hardening</a></span>
               </li>
               <li class="skill">
                 <span class="skill__name">Gestion des secrets (Vault, Vaultwarden)</span>
@@ -701,12 +679,12 @@
               <li class="skill">
                 <span class="skill__name">Réponse à incident (procédures)</span>
                 <span class="lvl lvl--1" role="img" aria-label="Niveau notions"><i></i><i></i><i></i></span>
-                <span class="skill__proof">↳ <a href="#p-ansible">ansible-hardening</a>, <a href="#p-soc">mini-soc-blueteam</a></span>
+                <span class="skill__proof">↳ <a href="#p-ansible">ansible-hardening</a></span>
               </li>
               <li class="skill">
                 <span class="skill__name">Reconnaissance réseau (nmap, masscan)</span>
                 <span class="lvl lvl--1" role="img" aria-label="Niveau notions"><i></i><i></i><i></i></span>
-                <span class="skill__proof">↳ <a href="#p-terraform">terraform-lab-cyber</a>, <a href="#p-soc">mini-soc-blueteam</a></span>
+                <span class="skill__proof">↳ <a href="#p-terraform">terraform-lab-cyber</a></span>
               </li>
               <li class="skill">
                 <span class="skill__name">Analyse réseau (Wireshark)</span>

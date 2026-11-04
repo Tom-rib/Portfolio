@@ -26,7 +26,6 @@ spécialisation en cybersécurité.
 | Projet | Ce que j'y ai fait |
 |---|---|
 | **[Conformité NIS2](https://github.com/Tom-rib/NIS2)** | Mise en conformité à la directive NIS2 pour une régie des eaux qualifiée « entité essentielle » : qualification réglementaire, analyse d'écart, architecture segmentée IT/OT (VLAN, DMZ, pare-feu, VPN), chronologie de crise et notifications 24 h / 72 h / 1 mois |
-| **[Mini SOC — Blue Team](https://github.com/Tom-rib/Mini_SOC)** | SOC sur 3 VM Rocky Linux : cible durcie (SELinux enforcing, Fail2ban, Auditd), SIEM Wazuh + Elasticsearch avec règles personnalisées, supervision Prometheus/Grafana, attaques rejouées et playbooks de réponse — *en cours* |
 | **[Terraform — lab de cybersécurité](https://github.com/Tom-rib/Terraform)** | Infrastructure as Code sur VMware Workstation via l'API `vmrest` : deux VM Debian 12 clonées et configurées par provisioners `remote-exec`, découverte d'IP par data source `external`, configuration complémentaire Ansible, secrets hors dépôt |
 | **Ansible — automatisation & durcissement** | Playbooks et rôles réutilisables, hardening SSH/UFW/PAM, centralisation des logs via Filebeat, secrets chiffrés avec Vault, scénario de réponse à incident |
 | **[Kubernetes K3S](https://github.com/Tom-rib/kubernetes)** | Cluster 3 nœuds sur Debian, applications conteneurisées avec replicas, stockage persistant, ConfigMaps/Secrets, RBAC, déploiements Helm |
