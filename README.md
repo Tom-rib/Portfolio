@@ -25,6 +25,8 @@ spécialisation en cybersécurité.
 
 | Projet | Ce que j'y ai fait |
 |---|---|
+| **[Conformité NIS2](https://github.com/Tom-rib/NIS2)** | Mise en conformité à la directive NIS2 pour une régie des eaux qualifiée « entité essentielle » : qualification réglementaire, analyse d'écart, architecture segmentée IT/OT (VLAN, DMZ, pare-feu, VPN), chronologie de crise et notifications 24 h / 72 h / 1 mois |
+| **[Mini SOC — Blue Team](https://github.com/Tom-rib/Mini_SOC)** | SOC sur 3 VM Rocky Linux : cible durcie (SELinux enforcing, Fail2ban, Auditd), SIEM Wazuh + Elasticsearch avec règles personnalisées, supervision Prometheus/Grafana, attaques rejouées et playbooks de réponse — *en cours* |
 | **[Terraform — lab de cybersécurité](https://github.com/Tom-rib/Terraform)** | Infrastructure as Code sur VMware Workstation via l'API `vmrest` : deux VM Debian 12 clonées et configurées par provisioners `remote-exec`, découverte d'IP par data source `external`, configuration complémentaire Ansible, secrets hors dépôt |
 | **Ansible — automatisation & durcissement** | Playbooks et rôles réutilisables, hardening SSH/UFW/PAM, centralisation des logs via Filebeat, secrets chiffrés avec Vault, scénario de réponse à incident |
 | **[Kubernetes K3S](https://github.com/Tom-rib/kubernetes)** | Cluster 3 nœuds sur Debian, applications conteneurisées avec replicas, stockage persistant, ConfigMaps/Secrets, RBAC, déploiements Helm |
@@ -34,6 +36,10 @@ spécialisation en cybersécurité.
 ### Le reste du labo
 
 - **[GitHub Actions — CI/CD sécurisé](https://github.com/Tom-rib/Github_Action_CI-CD)** — Pipeline complet build → vérifications → déploiement Ansible sur Nginx, secrets en GitHub Secrets, `ssh-agent` sans clé sur disque, inventaire éphémère et stratégie de rollback
+- **[Bastion Guacamole](https://github.com/Tom-rib/Bastion_Guacamole)** — Bastion d'accès sans client : RDP, SSH et VNC dans le navigateur, reverse proxy Nginx HTTPS, MFA TOTP, groupes cloisonnés
+- **[Analyse réseau Wireshark](https://github.com/Tom-rib/Documentation_Wireshark_v2)** — Captures ARP/TCP/TLS couche par couche, handshake TCP, puis automatisation TShark (filtres BPF, sortie JSON)
+- **[LabOrchestrator](https://github.com/Tom-rib/LabOrchestrator)** — Plateforme de labos éphémères sur Proxmox VE : API Node.js/Express, interface React, clonage et cloud-init via l'API Proxmox, quotas — *en cours*
+- **[Services Linux scriptés](https://github.com/Tom-rib/Tuto_Install_Config_Script_Serveur_Linux)** — Install interactive et déploiement automatique par service : Bind9, WireGuard, Samba, mdadm, HAProxy, nftables, Prometheus — *en cours*
 - **[ad-enterprise](https://github.com/Tom-rib/ad-enterprise)** — Sécurisation Microsoft Entra ID : modèle en tiers, MFA, accès conditionnel, automatisation PowerShell/Graph
 - **[NexusVirtualis](https://github.com/Tom-rib/NexusVirtualis)** — Étude comparative de 4 hyperviseurs type 1 (ESXi, Proxmox, Hyper-V, XCP-ng) en virtualisation imbriquée
 - **[MINILAB](https://github.com/Tom-rib/documentation_minilab)** — Infrastructure réseau associative : LDAP, NFS, DNS, DHCP, VPN, clients légers Debian
@@ -58,7 +64,7 @@ spécialisation en cybersécurité.
 
 Aucune certification obtenue à ce jour. Celles que je prépare, dans l'ordre :
 
-1. **RHCSA** — formalise l'administration Linux pratiquée sur tous mes projets
+1. **RHCSA** — formalise l'administration Linux pratiquée sur tous mes projets ([plan de révision et mémos](https://github.com/Tom-rib/redhat_RHCSA_Cours_memos))
 2. **Cisco CCNA** — consolide le réseau : routage, commutation, sécurité
 3. **AZ-800** — prolonge mes projets Active Directory et Entra ID
 4. **AWS Solutions Architect Associate** — valide le socle cloud du projet Architecte AWS
