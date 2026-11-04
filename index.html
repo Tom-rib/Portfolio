@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tom Ribero — Administrateur Systèmes, Réseaux & Sécurité</title>
-  <meta name="description" content="Portfolio de Tom Ribero, étudiant en Bachelor IT à Marseille. Projets d'infrastructure et de cybersécurité : conformité NIS2, Terraform, Ansible, Kubernetes K3S, Docker Swarm, AWS, CI/CD GitHub Actions, bastion Guacamole, virtualisation.">
+  <meta name="description" content="Portfolio de Tom Ribero, étudiant en Bachelor IT à Marseille. Projets d'infrastructure et de cybersécurité : conformité NIS2, Terraform, Ansible, Kubernetes K3S, CI/CD GitHub Actions, AWS, Entra ID.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,9 +61,9 @@
             <p class="hero__role">Administrateur Systèmes, Réseaux &amp; Sécurité — en formation</p>
 
             <p class="hero__pitch">
-              Je construis et documente des infrastructures de bout en bout : clusters Kubernetes et
-              Docker Swarm, provisionnement Terraform, automatisation Ansible, annuaires Active
-              Directory et Entra ID, hyperviseurs.
+              Je construis et documente des infrastructures de bout en bout : provisionnement
+              Terraform, automatisation Ansible, clusters Kubernetes, chaînes CI/CD, cloud AWS
+              et sécurisation des identités.
               Chaque projet ci-dessous est monté en labo, testé en panne réelle, puis documenté pour être
               rejouable par quelqu'un d'autre. C'est ce que je cherche à faire en entreprise.
             </p>
@@ -112,7 +112,6 @@
           </p>
         </div>
 
-        <h3 class="subhead">Les plus représentatifs</h3>
         <div class="grid">
 
           <article class="card card--featured" id="p-nis2">
@@ -136,7 +135,6 @@
               <li>NIS2</li><li>Gouvernance</li><li>Segmentation IT/OT</li><li>VLAN</li><li>Pare-feu</li><li>VPN</li><li>Mermaid</li>
             </ul>
           </article>
-
           <article class="card card--featured" id="p-terraform">
             <div class="card__head">
               <h3><a href="https://github.com/Tom-rib/Terraform" target="_blank" rel="noopener">terraform-lab-cyber</a></h3>
@@ -159,7 +157,6 @@
               <li>Terraform</li><li>IaC</li><li>VMware Workstation</li><li>Debian 12</li><li>Ansible</li><li>PowerShell</li><li>nmap</li>
             </ul>
           </article>
-
           <article class="card card--featured" id="p-ansible">
             <div class="card__head">
               <h3><a href="https://github.com/Tom-rib/Ansible" target="_blank" rel="noopener">ansible-hardening</a></h3>
@@ -180,7 +177,6 @@
               <li>Ansible</li><li>YAML</li><li>Jinja2</li><li>SSH</li><li>UFW</li><li>Filebeat</li><li>Vault</li>
             </ul>
           </article>
-
           <article class="card card--featured" id="p-k3s">
             <div class="card__head">
               <h3><a href="https://github.com/Tom-rib/kubernetes" target="_blank" rel="noopener">kubernetes-k3s</a></h3>
@@ -201,55 +197,7 @@
               <li>Kubernetes</li><li>K3S</li><li>Helm</li><li>Debian</li><li>RBAC</li><li>Bash</li>
             </ul>
           </article>
-
-          <article class="card card--featured" id="p-swarm">
-            <div class="card__head">
-              <h3><a href="https://github.com/Tom-rib/Docker_Swarm" target="_blank" rel="noopener">docker-swarm-ha</a></h3>
-              <span class="badge badge--done">terminé</span>
-            </div>
-            <p class="card__desc">
-              Cluster Docker Swarm multi-nœuds conçu pour la continuité d'activité : si un serveur
-              tombe, les services redémarrent ailleurs sans perte de données.
-            </p>
-            <ul class="card__did">
-              <li>Cluster multi-nœuds, services répliqués, réseaux overlay</li>
-              <li>Volumes partagés via NFS pour la persistance</li>
-              <li>Plans de continuité et de reprise (PCA/PRA) éprouvés</li>
-              <li>Tests de panne simulée et vérification du basculement</li>
-              <li>Scripts d'installation automatisés + guide de reprise en 15&nbsp;min</li>
-            </ul>
-            <ul class="stack">
-              <li>Docker</li><li>Swarm</li><li>NFS</li><li>Bash</li><li>Reverse proxy</li>
-            </ul>
-          </article>
-
-          <article class="card card--featured" id="p-aws">
-            <div class="card__head">
-              <h3><a href="https://github.com/Tom-rib/Architecte_AWS" target="_blank" rel="noopener">architecte-aws</a></h3>
-              <span class="badge badge--done">terminé</span>
-            </div>
-            <p class="card__desc">
-              Neuf paliers progressifs de construction d'infrastructure cloud, de l'instance isolée
-              jusqu'à l'orchestration de traitements serverless.
-            </p>
-            <ul class="card__did">
-              <li>Infrastructure web scalable : EC2, S3, RDS</li>
-              <li>API serverless avec Lambda et Step Functions</li>
-              <li>Supervision et alerting CloudWatch</li>
-              <li>Chaîne ETL avec Glue et requêtage Athena</li>
-              <li>Conteneurs managés sur ECS/Fargate</li>
-            </ul>
-            <ul class="stack">
-              <li>AWS</li><li>EC2</li><li>S3</li><li>RDS</li><li>Lambda</li><li>CloudWatch</li><li>ECS/Fargate</li>
-            </ul>
-          </article>
-
-        </div>
-
-        <h3 class="subhead subhead--spaced">Le reste du labo</h3>
-        <div class="grid">
-
-          <article class="card" id="p-cicd">
+          <article class="card card--featured" id="p-cicd">
             <div class="card__head">
               <h3><a href="https://github.com/Tom-rib/Github_Action_CI-CD" target="_blank" rel="noopener">github-actions-ci-cd</a></h3>
               <span class="badge badge--done">terminé</span>
@@ -271,93 +219,27 @@
               <li>GitHub Actions</li><li>CI/CD</li><li>Bash</li><li>Ansible</li><li>Nginx</li><li>SSH</li><li>Debian</li>
             </ul>
           </article>
-
-          <article class="card" id="p-bastion">
+          <article class="card card--featured" id="p-aws">
             <div class="card__head">
-              <h3><a href="https://github.com/Tom-rib/Bastion_Guacamole" target="_blank" rel="noopener">bastion-guacamole</a></h3>
+              <h3><a href="https://github.com/Tom-rib/Architecte_AWS" target="_blank" rel="noopener">architecte-aws</a></h3>
               <span class="badge badge--done">terminé</span>
             </div>
             <p class="card__desc">
-              Bastion d'accès distant sans client : RDP, SSH et VNC centralisés dans un navigateur,
-              derrière un reverse proxy HTTPS et une authentification à deux facteurs.
+              Neuf paliers progressifs de construction d'infrastructure cloud, de l'instance isolée
+              jusqu'à l'orchestration de traitements serverless.
             </p>
             <ul class="card__did">
-              <li>Debian 12 : Guacamole 1.5.5, <code>guacd</code>, Tomcat 9, Java 11, MariaDB</li>
-              <li>Reverse proxy Nginx en HTTPS, certificat OpenSSL, redirection HTTP → HTTPS</li>
-              <li>Cibles RDP (Windows 10 Pro), SSH (Debian CLI) et VNC (TigerVNC)</li>
-              <li>Groupes d'utilisateurs cloisonnés et double interface réseau public/privé</li>
-              <li>MFA par TOTP et guide de dépannage guacd/Tomcat</li>
+              <li>Infrastructure web scalable : EC2, S3, RDS</li>
+              <li>API serverless avec Lambda et Step Functions</li>
+              <li>Supervision et alerting CloudWatch</li>
+              <li>Chaîne ETL avec Glue et requêtage Athena</li>
+              <li>Conteneurs managés sur ECS/Fargate</li>
             </ul>
             <ul class="stack">
-              <li>Debian 12</li><li>Guacamole</li><li>Nginx</li><li>MariaDB</li><li>OpenSSL</li><li>RDP</li><li>TOTP</li>
+              <li>AWS</li><li>EC2</li><li>S3</li><li>RDS</li><li>Lambda</li><li>CloudWatch</li><li>ECS/Fargate</li>
             </ul>
           </article>
-
-          <article class="card" id="p-wireshark">
-            <div class="card__head">
-              <h3><a href="https://github.com/Tom-rib/Documentation_Wireshark_v2" target="_blank" rel="noopener">analyse-reseau-wireshark</a></h3>
-              <span class="badge badge--done">terminé</span>
-            </div>
-            <p class="card__desc">
-              Analyse réseau de la capture brute jusqu'à l'automatisation : lecture des en-têtes
-              couche par couche, puis extraction scriptée avec TShark.
-            </p>
-            <ul class="card__did">
-              <li>Captures ARP, UDP et TCP, décomposition du handshake TCP (SYN, SYN-ACK, ACK)</li>
-              <li>Lecture des en-têtes MAC, IP, ARP, UDP et TCP (couches 2 à 4) sur un labo client/serveur</li>
-              <li>Observation de DHCP, DNS, mDNS, FTP, SFTP, SMB et HTTPS/TLS 1.2 et 1.3</li>
-              <li>Automatisation TShark : filtres BPF, capture conditionnelle, sortie JSON exploitable par script</li>
-            </ul>
-            <ul class="stack">
-              <li>Wireshark</li><li>TShark</li><li>BPF</li><li>pcap</li><li>TCP/IP</li><li>TLS</li>
-            </ul>
-          </article>
-
-          <article class="card" id="p-laborchestrator">
-            <div class="card__head">
-              <h3><a href="https://github.com/Tom-rib/LabOrchestrator" target="_blank" rel="noopener">lab-orchestrator</a></h3>
-              <span class="badge badge--ongoing">en cours</span>
-            </div>
-            <p class="card__desc">
-              Plateforme web de labos éphémères sur Proxmox VE : l'utilisateur demande un
-              environnement, la VM est clonée et provisionnée automatiquement, dans la limite
-              de son quota.
-            </p>
-            <ul class="card__did">
-              <li>API Node.js/Express : authentification JWT, gestion des quotas, intégration Proxmox</li>
-              <li>Interface React (Vite) : connexion, tableau de bord, panneau d'administration</li>
-              <li>Provisionnement par clonage de VM et <code>cloud-init</code> via l'API Proxmox</li>
-              <li>Six modèles de labos (RHCSA, Docker, Kubernetes, CTF, Terraform, Ansible)</li>
-              <li>Quotas CPU/RAM/stockage par utilisateur et journal d'audit</li>
-            </ul>
-            <ul class="stack">
-              <li>Node.js</li><li>Express</li><li>React</li><li>Proxmox VE</li><li>cloud-init</li><li>Docker Compose</li><li>JWT</li>
-            </ul>
-          </article>
-
-          <article class="card" id="p-services-linux">
-            <div class="card__head">
-              <h3><a href="https://github.com/Tom-rib/Tuto_Install_Config_Script_Serveur_Linux" target="_blank" rel="noopener">services-linux-scriptes</a></h3>
-              <span class="badge badge--ongoing">en cours</span>
-            </div>
-            <p class="card__desc">
-              Mémo opérationnel des services Linux : pour chaque service, un volet client et un
-              volet serveur, un script d'installation interactif, un script de déploiement
-              automatique et ses tests.
-            </p>
-            <ul class="card__did">
-              <li>Réseau : DHCP (<code>isc-dhcp</code>), DNS (Bind9), VPN (OpenVPN, WireGuard), SSH, FTP/SFTP</li>
-              <li>Stockage : Samba, NFS, RAID logiciel (<code>mdadm</code>)</li>
-              <li>Web et données : Apache, Nginx, reverse proxy HAProxy, MariaDB, OpenLDAP</li>
-              <li>Filtrage et supervision : nftables, Fail2Ban, Nagios, Zabbix, Prometheus</li>
-              <li>Deux scripts par service : <code>install_interactive.sh</code> et <code>deploy_auto.sh</code>, avec tests</li>
-            </ul>
-            <ul class="stack">
-              <li>Debian 12</li><li>Bash</li><li>Bind9</li><li>WireGuard</li><li>Samba</li><li>nftables</li><li>Prometheus</li>
-            </ul>
-          </article>
-
-          <article class="card" id="p-entra">
+          <article class="card card--featured" id="p-entra">
             <div class="card__head">
               <h3><a href="https://github.com/Tom-rib/ad-enterprise" target="_blank" rel="noopener">ad-enterprise</a></h3>
               <span class="badge badge--done">terminé</span>
@@ -374,91 +256,6 @@
             </ul>
             <ul class="stack"><li>Entra ID</li><li>PowerShell 7</li><li>Microsoft Graph</li><li>MFA</li><li>IAM</li></ul>
           </article>
-
-          <article class="card" id="p-hyperviseurs">
-            <div class="card__head">
-              <h3><a href="https://github.com/Tom-rib/NexusVirtualis" target="_blank" rel="noopener">nexus-virtualis</a></h3>
-              <span class="badge badge--done">terminé</span>
-            </div>
-            <p class="card__desc">
-              Étude comparative de quatre hyperviseurs de type 1 en virtualisation imbriquée :
-              installation, exploitation et migration de VM entre plateformes.
-            </p>
-            <ul class="card__did">
-              <li>Hyper-V, VMware ESXi, Proxmox VE et XCP-ng en parallèle</li>
-              <li>Architecture imbriquée sous VMware Workstation Pro</li>
-              <li>Gestion des VM, snapshots et migrations inter-hyperviseurs</li>
-            </ul>
-            <ul class="stack"><li>ESXi</li><li>Proxmox VE</li><li>Hyper-V</li><li>XCP-ng</li><li>PowerShell</li></ul>
-          </article>
-
-          <article class="card" id="p-minilab">
-            <div class="card__head">
-              <h3><a href="https://github.com/Tom-rib/documentation_minilab" target="_blank" rel="noopener">minilab</a></h3>
-              <span class="badge badge--done">terminé</span>
-            </div>
-            <p class="card__desc">
-              Infrastructure réseau complète pour une association : services centralisés, postes
-              clients légers et supervision, pensée pour être maintenable par un non-spécialiste.
-            </p>
-            <ul class="card__did">
-              <li>Services centralisés : LDAP, NFS, DNS, DHCP</li>
-              <li>Postes clients légers sous Debian</li>
-              <li>Accès distant par VPN et durcissement système</li>
-              <li>Supervision et interface de gestion web</li>
-            </ul>
-            <ul class="stack"><li>Debian</li><li>LDAP</li><li>NFS</li><li>DNS</li><li>DHCP</li><li>VPN</li></ul>
-          </article>
-
-          <article class="card" id="p-truenas">
-            <div class="card__head">
-              <h3><a href="https://github.com/Tom-rib/Documentation-Serveur-TrueNas-Scale" target="_blank" rel="noopener">truenas-vaultwarden</a></h3>
-              <span class="badge badge--done">terminé</span>
-            </div>
-            <p class="card__desc">
-              Serveur de stockage TrueNAS Scale déployé et sécurisé, hébergeant un gestionnaire
-              de mots de passe auto-hébergé.
-            </p>
-            <ul class="card__did">
-              <li>Gestion des utilisateurs, partages, SSH et SFTP</li>
-              <li>Vaultwarden auto-hébergé avec authentification 2FA</li>
-              <li>Machine virtuelle imbriquée pour les tests</li>
-            </ul>
-            <ul class="stack"><li>TrueNAS Scale</li><li>ZFS</li><li>Vaultwarden</li><li>2FA</li><li>SFTP</li></ul>
-          </article>
-
-          <article class="card" id="p-pxe">
-            <div class="card__head">
-              <h3><a href="https://github.com/Tom-rib/Documentation_Serveur_Windows_PXE_ADK" target="_blank" rel="noopener">deploiement-pxe</a></h3>
-              <span class="badge badge--done">terminé</span>
-            </div>
-            <p class="card__desc">
-              Serveur de déploiement PXE combinant Windows Server et outils open source pour
-              installer des postes en masse à partir d'images système.
-            </p>
-            <ul class="card__did">
-              <li>Chaîne de démarrage réseau PXE et images Windows ADK</li>
-              <li>Installations automatisées et reproductibles</li>
-            </ul>
-            <ul class="stack"><li>PXE</li><li>Windows ADK</li><li>DHCP/TFTP</li></ul>
-          </article>
-
-          <article class="card" id="p-arduino">
-            <div class="card__head">
-              <h3><a href="https://github.com/Tom-rib/Arduino" target="_blank" rel="noopener">arduino-labs</a></h3>
-              <span class="badge badge--done">terminé</span>
-            </div>
-            <p class="card__desc">
-              Série d'exercices progressifs en électronique embarquée, dans la continuité de mon
-              BTS Systèmes Électroniques — des bases jusqu'à une station météo.
-            </p>
-            <ul class="card__did">
-              <li>Montages analogiques et numériques</li>
-              <li>Programmation C embarquée, capteurs et affichage</li>
-            </ul>
-            <ul class="stack"><li>Arduino</li><li>C</li><li>Électronique</li></ul>
-          </article>
-
         </div>
       </div>
     </section>
@@ -470,8 +267,8 @@
           <p class="prompt">cat competences.txt</p>
           <h2>Compétences</h2>
           <p class="lede">
-            Niveau annoncé honnêtement, avec le projet qui le prouve. Je préfère assumer trois
-            niveaux clairs plutôt qu'afficher une liste plate où tout se vaut.
+            Ce que je sais faire, sur trois niveaux. Quand un projet de cette page le démontre,
+            il est en lien juste en dessous.
           </p>
         </div>
 
@@ -489,27 +286,23 @@
               <li class="skill">
                 <span class="skill__name">Administration Linux (Debian, Ubuntu, Rocky)</span>
                 <span class="lvl lvl--3" role="img" aria-label="Niveau solide"><i></i><i></i><i></i></span>
-                <span class="skill__proof">↳ <a href="#p-ansible">ansible-hardening</a>, <a href="#p-minilab">minilab</a></span>
+                <span class="skill__proof">↳ <a href="#p-ansible">ansible-hardening</a></span>
               </li>
               <li class="skill">
                 <span class="skill__name">Windows Server &amp; Active Directory</span>
                 <span class="lvl lvl--3" role="img" aria-label="Niveau solide"><i></i><i></i><i></i></span>
-                <span class="skill__proof">↳ <a href="#p-pxe">deploiement-pxe</a></span>
               </li>
               <li class="skill">
                 <span class="skill__name">SSH, SFTP, accès distant sécurisé</span>
                 <span class="lvl lvl--3" role="img" aria-label="Niveau solide"><i></i><i></i><i></i></span>
-                <span class="skill__proof">↳ <a href="#p-truenas">truenas-vaultwarden</a></span>
               </li>
               <li class="skill">
                 <span class="skill__name">DNS, DHCP, LDAP, NFS</span>
                 <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
-                <span class="skill__proof">↳ <a href="#p-minilab">minilab</a></span>
               </li>
               <li class="skill">
                 <span class="skill__name">VPN &amp; segmentation réseau</span>
                 <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
-                <span class="skill__proof">↳ <a href="#p-minilab">minilab</a></span>
               </li>
               <li class="skill">
                 <span class="skill__name">Routage &amp; commutation Cisco</span>
@@ -524,12 +317,11 @@
               <li class="skill">
                 <span class="skill__name">Docker (images, volumes, réseaux)</span>
                 <span class="lvl lvl--3" role="img" aria-label="Niveau solide"><i></i><i></i><i></i></span>
-                <span class="skill__proof">↳ <a href="#p-swarm">docker-swarm-ha</a>, <a href="#p-k3s">kubernetes-k3s</a></span>
+                <span class="skill__proof">↳ <a href="#p-k3s">kubernetes-k3s</a></span>
               </li>
               <li class="skill">
                 <span class="skill__name">Docker Swarm (HA, PCA/PRA)</span>
                 <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
-                <span class="skill__proof">↳ <a href="#p-swarm">docker-swarm-ha</a></span>
               </li>
               <li class="skill">
                 <span class="skill__name">Kubernetes / K3S</span>
@@ -550,12 +342,11 @@
               <li class="skill">
                 <span class="skill__name">VMware (Workstation, ESXi)</span>
                 <span class="lvl lvl--3" role="img" aria-label="Niveau solide"><i></i><i></i><i></i></span>
-                <span class="skill__proof">↳ <a href="#p-hyperviseurs">nexus-virtualis</a>, <a href="#p-terraform">terraform-lab-cyber</a></span>
+                <span class="skill__proof">↳ <a href="#p-terraform">terraform-lab-cyber</a></span>
               </li>
               <li class="skill">
                 <span class="skill__name">Proxmox VE, Hyper-V, XCP-ng</span>
                 <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
-                <span class="skill__proof">↳ <a href="#p-hyperviseurs">nexus-virtualis</a></span>
               </li>
               <li class="skill">
                 <span class="skill__name">AWS (EC2, S3, RDS, Lambda, CloudWatch)</span>
@@ -570,7 +361,6 @@
               <li class="skill">
                 <span class="skill__name">Stockage &amp; sauvegarde (TrueNAS, ZFS)</span>
                 <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
-                <span class="skill__proof">↳ <a href="#p-truenas">truenas-vaultwarden</a></span>
               </li>
             </ul>
           </div>
@@ -581,7 +371,7 @@
               <li class="skill">
                 <span class="skill__name">Bash &amp; ligne de commande</span>
                 <span class="lvl lvl--3" role="img" aria-label="Niveau solide"><i></i><i></i><i></i></span>
-                <span class="skill__proof">↳ <a href="#p-services-linux">services-linux-scriptes</a>, <a href="#p-cicd">github-actions-ci-cd</a></span>
+                <span class="skill__proof">↳ <a href="#p-cicd">github-actions-ci-cd</a></span>
               </li>
               <li class="skill">
                 <span class="skill__name">Git &amp; GitHub</span>
@@ -630,7 +420,7 @@
               <li class="skill">
                 <span class="skill__name">Gestion des identités, MFA, accès conditionnel</span>
                 <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
-                <span class="skill__proof">↳ <a href="#p-entra">ad-enterprise</a>, <a href="#p-bastion">bastion-guacamole</a></span>
+                <span class="skill__proof">↳ <a href="#p-entra">ad-enterprise</a></span>
               </li>
               <li class="skill">
                 <span class="skill__name">Centralisation &amp; analyse de logs (Filebeat)</span>
@@ -640,7 +430,6 @@
               <li class="skill">
                 <span class="skill__name">Gestion des secrets (Vault, Vaultwarden)</span>
                 <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
-                <span class="skill__proof">↳ <a href="#p-truenas">truenas-vaultwarden</a></span>
               </li>
               <li class="skill">
                 <span class="skill__name">Réponse à incident (procédures)</span>
@@ -655,7 +444,6 @@
               <li class="skill">
                 <span class="skill__name">Analyse réseau (Wireshark)</span>
                 <span class="lvl lvl--1" role="img" aria-label="Niveau notions"><i></i><i></i><i></i></span>
-                <span class="skill__proof">↳ <a href="#p-wireshark">analyse-reseau-wireshark</a></span>
               </li>
             </ul>
           </div>
@@ -666,7 +454,6 @@
               <li class="skill">
                 <span class="skill__name">C / C++ &amp; embarqué</span>
                 <span class="lvl lvl--2" role="img" aria-label="Niveau en pratique"><i></i><i></i><i></i></span>
-                <span class="skill__proof">↳ <a href="#p-arduino">arduino-labs</a>, BTS Systèmes Électroniques</span>
               </li>
               <li class="skill">
                 <span class="skill__name">HTML, CSS, PHP</span>

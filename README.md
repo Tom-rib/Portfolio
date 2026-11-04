@@ -21,30 +21,17 @@ spécialisation en cybersécurité.
 
 ## 💻 Projets
 
-### Les plus représentatifs
-
 | Projet | Ce que j'y ai fait |
 |---|---|
 | **[Conformité NIS2](https://github.com/Tom-rib/NIS2)** | Mise en conformité à la directive NIS2 pour une régie des eaux qualifiée « entité essentielle » : qualification réglementaire, analyse d'écart, architecture segmentée IT/OT (VLAN, DMZ, pare-feu, VPN), chronologie de crise et notifications 24 h / 72 h / 1 mois |
 | **[Terraform — lab de cybersécurité](https://github.com/Tom-rib/Terraform)** | Infrastructure as Code sur VMware Workstation via l'API `vmrest` : deux VM Debian 12 clonées et configurées par provisioners `remote-exec`, découverte d'IP par data source `external`, configuration complémentaire Ansible, secrets hors dépôt |
-| **Ansible — automatisation & durcissement** | Playbooks et rôles réutilisables, hardening SSH/UFW/PAM, centralisation des logs via Filebeat, secrets chiffrés avec Vault, scénario de réponse à incident |
+| **[Ansible — automatisation & durcissement](https://github.com/Tom-rib/Ansible)** | Playbooks et rôles réutilisables, hardening SSH/UFW/PAM, centralisation des logs via Filebeat, secrets chiffrés avec Vault, scénario de réponse à incident |
 | **[Kubernetes K3S](https://github.com/Tom-rib/kubernetes)** | Cluster 3 nœuds sur Debian, applications conteneurisées avec replicas, stockage persistant, ConfigMaps/Secrets, RBAC, déploiements Helm |
-| **[Docker Swarm](https://github.com/Tom-rib/Docker_Swarm)** | Cluster multi-nœuds haute disponibilité, volumes NFS partagés, plans PCA/PRA éprouvés par tests de panne simulée |
+| **[GitHub Actions — CI/CD sécurisé](https://github.com/Tom-rib/Github_Action_CI-CD)** | Pipeline complet build → vérifications → déploiement Ansible sur Nginx, secrets en GitHub Secrets, `ssh-agent` sans clé sur disque, inventaire éphémère et stratégie de rollback |
 | **[Architecte AWS](https://github.com/Tom-rib/Architecte_AWS)** | EC2, S3, RDS, Lambda, Step Functions, CloudWatch, ETL Glue/Athena, conteneurs ECS/Fargate |
+| **[ad-enterprise](https://github.com/Tom-rib/ad-enterprise)** | Sécurisation Microsoft Entra ID : modèle en tiers, MFA, accès conditionnel, automatisation PowerShell/Graph |
 
-### Le reste du labo
-
-- **[GitHub Actions — CI/CD sécurisé](https://github.com/Tom-rib/Github_Action_CI-CD)** — Pipeline complet build → vérifications → déploiement Ansible sur Nginx, secrets en GitHub Secrets, `ssh-agent` sans clé sur disque, inventaire éphémère et stratégie de rollback
-- **[Bastion Guacamole](https://github.com/Tom-rib/Bastion_Guacamole)** — Bastion d'accès sans client : RDP, SSH et VNC dans le navigateur, reverse proxy Nginx HTTPS, MFA TOTP, groupes cloisonnés
-- **[Analyse réseau Wireshark](https://github.com/Tom-rib/Documentation_Wireshark_v2)** — Captures ARP/TCP/TLS couche par couche, handshake TCP, puis automatisation TShark (filtres BPF, sortie JSON)
-- **[LabOrchestrator](https://github.com/Tom-rib/LabOrchestrator)** — Plateforme de labos éphémères sur Proxmox VE : API Node.js/Express, interface React, clonage et cloud-init via l'API Proxmox, quotas — *en cours*
-- **[Services Linux scriptés](https://github.com/Tom-rib/Tuto_Install_Config_Script_Serveur_Linux)** — Install interactive et déploiement automatique par service : Bind9, WireGuard, Samba, mdadm, HAProxy, nftables, Prometheus — *en cours*
-- **[ad-enterprise](https://github.com/Tom-rib/ad-enterprise)** — Sécurisation Microsoft Entra ID : modèle en tiers, MFA, accès conditionnel, automatisation PowerShell/Graph
-- **[NexusVirtualis](https://github.com/Tom-rib/NexusVirtualis)** — Étude comparative de 4 hyperviseurs type 1 (ESXi, Proxmox, Hyper-V, XCP-ng) en virtualisation imbriquée
-- **[MINILAB](https://github.com/Tom-rib/documentation_minilab)** — Infrastructure réseau associative : LDAP, NFS, DNS, DHCP, VPN, clients légers Debian
-- **[TrueNAS + Vaultwarden](https://github.com/Tom-rib/Documentation-Serveur-TrueNas-Scale)** — Serveur de stockage sécurisé, gestionnaire de mots de passe auto-hébergé, 2FA
-- **[Déploiement PXE](https://github.com/Tom-rib/Documentation_Serveur_Windows_PXE_ADK)** — Installation de postes en masse via PXE et Windows ADK
-- **[Arduino](https://github.com/Tom-rib/Arduino)** — Électronique embarquée et programmation C, dans la continuité du BTS
+Les autres projets — virtualisation, stockage, bastion d'accès, analyse réseau, déploiement PXE, embarqué — sont sur [mon GitHub](https://github.com/Tom-rib?tab=repositories).
 
 ---
 
