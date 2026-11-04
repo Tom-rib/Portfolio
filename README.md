@@ -37,7 +37,7 @@ Les autres projets — virtualisation, stockage, bastion d'accès, analyse rése
 
 ## 📄 Formation
 
-- **Cycle d'ingénieur — spé Administration systèmes, réseaux et cybersécurité** (2027–2030, en alternance) — à venir
+- **Cycle d'ingénieur — spé Administration systèmes, réseaux et cybersécurité** (2027–2030, en alternance) — école en cours de recherche
 - **Bachelor IT — Administrateur Systèmes, Réseaux et Sécurité** (2024–2027) — La Plateforme, Marseille
 - **BTS Systèmes Électroniques** (2014) — Lycée du Rempart, Marseille
 - **Habilitation électrique BR** (2014)
